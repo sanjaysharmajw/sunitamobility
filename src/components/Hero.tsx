@@ -33,7 +33,7 @@ export default function Hero() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl text-base sm:text-lg lg:mx-0">
-            Suneeta E Mobility ki smart electric bikes. Silent power, instant pickup aur petrol ke kharche se azaadi.
+            Smart electric bikes from Suneeta E Mobility. Silent power, instant pickup and freedom from fuel costs.
             Designed in India, made for every road.
           </p>
 

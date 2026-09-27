@@ -25,7 +25,7 @@ export default function Calculator() {
           eyebrow="Savings calculator"
           title="See how much you"
           highlight="save every month"
-          text="Apni daily riding daaliye aur dekhiye EV se kitni bachat hoti hai."
+          text="Enter your daily riding and see how much you save with an EV."
         />
 
         <div className="mt-14 grid overflow-hidden rounded-3xl bg-white shadow-2xl shadow-sky-brand/10 ring-1 ring-sky-brand/10 lg:grid-cols-5">

@@ -26,7 +26,7 @@ export default function Charging() {
           eyebrow="Battery & charging"
           title="Power that"
           highlight="keeps you going"
-          text="Advanced battery management system ke saath safe, smart aur long-lasting power."
+          text="Safe, smart and long-lasting power with an advanced battery management system."
         />
 
         <div className="mt-14 grid items-center gap-10 lg:grid-cols-2">

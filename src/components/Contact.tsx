@@ -32,7 +32,7 @@ export default function Contact() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Something went wrong");
       form.reset();
-      setStatus({ type: "success", message: "Thank you! Hamari team jald hi aapse contact karegi." });
+      setStatus({ type: "success", message: "Thank you! Our team will contact you shortly." });
     } catch (err) {
       setStatus({ type: "error", message: err instanceof Error ? err.message : "Something went wrong" });
     }
@@ -45,14 +45,14 @@ export default function Contact() {
           eyebrow="Contact us"
           title="Book your"
           highlight="test ride"
-          text="Form bhariye, hamari team 24 ghante ke andar aapse sampark karegi."
+          text="Fill in the form and our team will get in touch within 24 hours."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-5">
           <div className="bg-volt relative overflow-hidden rounded-3xl p-8 text-white lg:col-span-2 sm:p-10">
             <div className="absolute -right-20 -bottom-20 h-64 w-64 rounded-full bg-white/15 blur-2xl" />
             <h3 className="text-2xl font-bold !text-white">Let&apos;s talk electric</h3>
-            <p className="mt-2 text-white/85">Showroom visit karein ya call karein. Hum aapki sahi EV chunne me madad karenge.</p>
+            <p className="mt-2 text-white/85">Visit our showroom or give us a call. We'll help you choose the right EV.</p>
             <ul className="relative mt-10 space-y-6">
               {INFO.map(({ icon: Icon, label, value, href }) => (
                 <li key={label}>
@@ -114,7 +114,7 @@ export default function Contact() {
                   required
                   rows={5}
                   maxLength={2000}
-                  placeholder="Test ride, price, dealership ya koi bhi sawaal…"
+                  placeholder="Test ride, price, dealership or any other question…"
                   className={`${inputClass} resize-none`}
                 />
               </div>

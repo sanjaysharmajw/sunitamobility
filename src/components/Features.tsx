@@ -11,7 +11,7 @@ const FEATURES = [
   {
     icon: IndianRupee,
     title: "Ultra Low Running Cost",
-    text: "Sirf ₹0.25 per km. Petrol bike ke comparison me 90% tak bachat.",
+    text: "Just ₹0.25 per km. Save up to 90% compared to a petrol bike.",
   },
   {
     icon: BatteryCharging,
@@ -21,7 +21,7 @@ const FEATURES = [
   {
     icon: Smartphone,
     title: "Smart Connectivity",
-    text: "App se battery status, GPS tracking, geo-fencing aur ride history dekhein.",
+    text: "Check battery status, GPS tracking, geo-fencing and ride history from the app.",
   },
   {
     icon: Wrench,
@@ -43,7 +43,7 @@ export default function Features() {
           eyebrow="Why go electric"
           title="Built for a"
           highlight="smarter ride"
-          text="Har Suneeta bike me technology, comfort aur savings ek saath milte hain."
+          text="Every Suneeta bike brings technology, comfort and savings together."
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">

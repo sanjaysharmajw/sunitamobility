@@ -56,18 +56,18 @@ export const TESTIMONIALS = [
     name: "Rahul Verma",
     city: "Jaipur",
     model: "Faast F2B",
-    text: "Petrol ka kharcha almost zero ho gaya! Office aane-jaane me roz ₹150 bachte hain, aur ride itni smooth hai ki traffic me bhi maza aata hai.",
+    text: "My fuel expenses are almost zero now! I save ₹150 every day on my office commute, and the ride is so smooth that I enjoy it even in traffic.",
   },
   {
     name: "Priya Sharma",
     city: "Delhi",
     model: "Faast F4",
-    text: "Light weight hai, chalana bahut easy hai. Ghar pe normal socket se charge ho jaati hai. College ke liye perfect EV hai.",
+    text: "It's lightweight and very easy to ride. It charges from a normal socket at home. The perfect EV for college.",
   },
   {
     name: "Amit Patel",
     city: "Ahmedabad",
     model: "FEV 650",
-    text: "198 km ki range sach me milti hai. Weekend trips ab bina tension ke. Mobile app se battery aur location dono track hote hain.",
+    text: "You really do get 198 km of range. Weekend trips are now tension-free. The mobile app tracks both battery and location.",
   },
 ];

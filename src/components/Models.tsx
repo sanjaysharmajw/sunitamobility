@@ -101,7 +101,7 @@ function FeaturedCard({ m }: { m: BikeModel }) {
         <div className="relative">
           <span className="text-xs font-semibold tracking-[0.25em] text-sky-light uppercase">Performance series</span>
           <h3 className="mt-3 text-3xl font-bold !text-white sm:text-4xl">{m.name}</h3>
-          <p className="mt-3 text-slate-300">{m.tagline}. Sporty look, powerful motor aur lambi range, har ride ek thrill.</p>
+          <p className="mt-3 text-slate-300">{m.tagline}. Sporty looks, a powerful motor and long range make every ride a thrill.</p>
           <div className="mt-8">
             <Specs m={m} large />
           </div>
@@ -123,7 +123,7 @@ export default function Models() {
           eyebrow="Our line-up"
           title="Choose your"
           highlight="electric ride"
-          text="City commute ho ya long ride, har zarurat ke liye ek Suneeta."
+          text="Whether it's a city commute or a long ride, there's a Suneeta for every need."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:gap-8">
