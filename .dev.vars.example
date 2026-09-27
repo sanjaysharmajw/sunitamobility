@@ -1,0 +1,2 @@
+# Used by `npm run preview` (Cloudflare local preview). Copy to .dev.vars and fill in.
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxxxxxx

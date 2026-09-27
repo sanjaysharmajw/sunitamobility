@@ -36,7 +36,7 @@ export const MODELS: BikeModel[] = [
     topSpeed: 70,
     battery: "2.2 kWh",
     charge: "4 hrs",
-    image: "/images/faast-f2b.png",
+    image: "/images/faast-f2b.webp",
     badge: "Bestseller",
   },
   {
@@ -45,7 +45,7 @@ export const MODELS: BikeModel[] = [
     range: 198,
     battery: "4.4 kWh",
     charge: "4 hrs",
-    image: "/images/f-ev-650.jpg",
+    image: "/images/f-ev-650.webp",
     featured: true,
     badge: "Flagship",
   },

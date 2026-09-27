@@ -42,3 +42,17 @@ Put your photos in `public/images/` (for example `suneeta-pro.jpg`) and replace 
 import Image from "next/image";
 <Image src="/images/suneeta-pro.jpg" alt="Suneeta Pro" width={800} height={480} className="w-full" />
 ```
+
+## Deploy to Cloudflare (Workers)
+
+The site runs on Cloudflare Workers through the [OpenNext Cloudflare adapter](https://opennext.js.org/cloudflare), so the contact form API works there too.
+
+```bash
+npx wrangler login                          # one time: opens the browser to sign in to Cloudflare
+npx wrangler secret put RESEND_API_KEY      # one time: paste your Resend API key
+npm run deploy                              # build + deploy, prints your *.workers.dev URL
+```
+
+- `CONTACT_TO_EMAIL` is set in `wrangler.jsonc` under `vars`.
+- Local Cloudflare preview: copy `.dev.vars.example` to `.dev.vars`, fill in the key, then `npm run preview` (http://localhost:8787).
+- Custom domain: Cloudflare dashboard → Workers & Pages → `sunitamobility` → Settings → Domains & Routes.
