@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Suneeta E Mobility: EV Bike Website
 
-## Getting Started
+Modern, responsive single-page website for the Suneeta E Mobility electric bike brand. It is built with Next.js 16 and Tailwind CSS 4, and the contact form sends email through [Resend](https://resend.com).
 
-First, run the development server:
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local   # then fill in the values
+npm run dev                  # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contact form email setup (Resend, free plan)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Sign up at https://resend.com (free plan: 3,000 emails/month, 100/day).
+2. Create an API key at https://resend.com/api-keys.
+3. In `.env.local`:
+   - `RESEND_API_KEY`: your key (`re_...`)
+   - `CONTACT_TO_EMAIL`: the inbox that should receive enquiries. Until you verify a domain,
+     Resend only delivers to the email address you signed up with.
+4. Optional: verify your own domain in Resend, then set
+   `CONTACT_FROM_EMAIL="Suneeta E Mobility <hello@yourdomain.com>"`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Restart `npm run dev` after changing env values. When you deploy to Vercel or another host, add the same variables in its environment settings.
 
-## Learn More
+## Where to edit content
 
-To learn more about Next.js, take a look at the following resources:
+| What | File |
+|---|---|
+| Colours (sky blue theme) | `src/app/globals.css` (`@theme` block) |
+| Bike models, prices, testimonials, nav links | `src/lib/data.ts` |
+| Phone, email, address | `src/components/Contact.tsx`, `src/components/Footer.tsx` |
+| Bike illustration | `src/components/EVBike.tsx` |
+| Email template | `src/app/api/contact/route.ts` |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Using real bike photos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Put your photos in `public/images/` (for example `suneeta-pro.jpg`) and replace `<EVBike ... />` in
+`Hero.tsx` or `Models.tsx` with:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```tsx
+import Image from "next/image";
+<Image src="/images/suneeta-pro.jpg" alt="Suneeta Pro" width={800} height={480} className="w-full" />
+```
