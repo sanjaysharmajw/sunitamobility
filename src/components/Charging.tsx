@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
 const SPECS = [
-  { label: "Battery chemistry", value: "Lithium-ion NMC" },
+  { label: "Battery chemistry", value: "Lithium-ion LFP" },
   { label: "Water & dust rating", value: "IP67" },
   { label: "Battery life", value: "1,500+ cycles" },
   { label: "Motor peak power", value: "Up to 7 kW" },

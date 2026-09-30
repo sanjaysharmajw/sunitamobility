@@ -26,7 +26,7 @@ export const MODELS: BikeModel[] = [
     tagline: "Long-range scooter for daily city rides",
     range: 160,
     topSpeed: 70,
-    battery: "2.2 kWh",
+    battery: "4.4 kWh",
     image: "/images/faast-f4.avif",
   },
   {

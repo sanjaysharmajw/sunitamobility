@@ -69,7 +69,7 @@ export default function Contact() {
               ))}
             </ul>
             <p className="relative mt-10 rounded-2xl bg-white/15 p-4 text-sm">
-              <b>Showroom timings:</b> Mon to Sun, 10:00 AM to 8:00 PM
+              <b>Showroom timings:</b> Mon to Sat, 10:00 AM to 8:00 PM
             </p>
           </div>
 
